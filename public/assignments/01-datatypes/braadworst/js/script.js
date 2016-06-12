@@ -6,7 +6,7 @@
   Display the odds array to the console.
 */
 let all = [12, 1238, 3724, 43, 89, 11, 32443287];
-
+ddddd
 /*
   We want to round the decimal below, write some code that rounds the decimal to 8 and 7
 */
@@ -36,3 +36,5 @@ let beers = ['amstel', 'heineken', 'grolsch', 'hertog jan'];
   The last two words have to be a single element and the code cannot contain a fixed numbers so no 3 as a limit
 */
 let toBeArray = 'I am the javascript king';
+console.log(toBeArray);
+console.log(b);
