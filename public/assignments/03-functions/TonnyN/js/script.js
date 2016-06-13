@@ -2,18 +2,16 @@
 
 // 1. Make a loop with only functions, it should count from 10 to 1
 // If you need help look at recursive functions, these are functions which call themselves
-console.log(HELLO);
 function recursive(x) {
-     if (x < 1) {
-      console.log(x);
-    }
-    else{
-      recursive (x-1)
-    }
+  console.log(x);
+  if (x > 1) {
+    recursive(x - 1);
+  }
 }
 recursive(10);
 
 // 2. Why would this example throw an error?
+//Je kunt de inner funtion niet aanroepen van buiten de functie, enkel de outer!
 // function outer() {
 //   function inner() {
 //     let x = 10;
@@ -40,17 +38,16 @@ window.onload = function () {
   // Bon appetit
 
   // Make the first pizza
-  pizzaMaker.make();
+   pizzaMaker.make(pizza1, [pizzaMaker.crust, pizzaMaker.sauce, pizzaMaker.cheese]);
 
   // Make the second pizza
-  pizzaMaker.make();
+   pizzaMaker.make(pizza2, [pizzaMaker.sauce, pizzaMaker.salami]);
 
   // Make the third pizza
-   pizzaMaker.make();
+   pizzaMaker.make(pizza3, [pizzaMaker.crust, pizzaMaker.sauce, pizzaMaker.salami, pizzaMaker.cheese]);
 
   // Make the fourth pizza
- pizzaMaker.make();
-}
+   pizzaMaker.make(pizza4, [pizzaMaker.salami, pizzaMaker.cheese]);}
 
 // The object that let us make new pizza's!
 // To make a pizza we call the make method, like pizzaMaker.make()
