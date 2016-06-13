@@ -2,6 +2,7 @@ let c = console;
 /*
   Create a for loop that counts down from 20 to 1
   For each iteration log the current counter
+  HAllo
 */
 for (let i = 20; i > 0; i--){
   c.log(i);
